@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>London</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+  <script>
+    function myFunction() {
+        document.getElementById("myDrop").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbutton')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown_content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
+
+</head>
+
+<body>
+
+                  <!-- HEADER -->
+
+
+
+<div class="header">
+    <div class="weather">
+        <img class="rain" src="img/rain.png" />
+        <p class="weather_text">
+            <span class="temp">6&deg;</span>
+            <br /> wind: 19 mph
+            <br /> humidity: 70%
+        </p>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbutton"> <i class="fa fa-bars fa-3x" aria-hidden="true"></i></button>
+        <div id="myDrop" class="drop_content">
+            <a href="#">Stuff</a>
+            <a href="#">And</a>
+            <a href="#">Things</a>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <img class="logo" src="img/Logo.png" />
+    <p class="header_text">
+        Explore the secret life of the city.
+    </p>
+    <button class="header_btn"><a>EXPLORE THE CITY</a></button>
+</div>
+<!-- NAV -->
+<div class="body">
+    <div style="clearfix"></div>
+
+    <p class="nav_text">
+        Search for your favorite: <span class="nav_grey">restaurant, museum, hotel, attractions</span>
+    </p>
+  <div class="container-fluid">
+    <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="hotel">
+                    <div class="hotel_img"></div>
+                    <h1>Accomodation</h1>
+                    <div class="bottom_border"></div>
+                    <p>
+                        Perfect solution:
+                        <span>hotel, apartment, hostel, guest house</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="tour">
+                    <div class="tour_img"></div>
+                    <h1>Tourist Attractions</h1>
+                    <div class="bottom_border"></div>
+                    <p>
+                        Search your favorite:
+                        <span>restaurant, museum, hotel, attractions</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="restaurant">
+                    <div class="restaurant_img"></div>
+                    <h1>Restaurants</h1>
+                    <div class="bottom_border"></div>
+                    <p>
+                        You are hungry:
+                        <span>chinese food, burgers, traditional foods</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="event">
+                    <div class="event_img"></div>
+                    <h1>Events & Tickets</h1>
+                    <div class="bottom_border"></div>
+                    <p>
+                        It's time to have fun:
+                        <span>concerts, cinema, exhibitions</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="coffee">
+                    <div class="coffee_img"></div>
+                    <h1>Coffee Shop</h1>
+                    <div class="bottom_border"></div>
+                    <p>
+                        You must wake up:
+                        <span>Starbucks, Filicori, Nescafe, Lavazza</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="gov">
+                    <div class="gov_img"></div>
+                    <h1>Government</h1>
+                    <div class="bottom_border"></div>
+                    <p>
+                        Must see:
+                        <span>parliament building, district court, royal house</span>
+                    </p>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+                    <!-- BLOG -->
+<div class="news">
+  <div class="container-fluid">
+    <p class="blog_header">
+        Latest news from <span class="london_crossout">London Blog</span>
+    </p>
+    <div class="bckgrnd_text" data="news"></div>
+    <div class="row">
+      <div class="col-xs-1">
+        <div class="arrow_left">
+            <img src="img/arrow-left.png" />
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-xs-8">
+        <div class="slider1">
+            <div class="slider_photo">
+            </div>
+            <div class="clearfix"></div>
+            <div class="slider_info">
+                <p class="slider_header">
+                    Exploring the food in the heart of London
+                    <br />
+                    <span>25 Aug, 2016</span>
+                </p>
+                <p class="slider_text">
+                    Loren Ipsum is simply the dummy text of the printing and typesetting industry. Loren Ipsum has been the industry standard dummy text since the 1500s
+                    <br />
+                </p>
+                <p class="slider_footer">by Felecia Wilson</p>
+            </div>
+
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-5 col-md-5">
+        <div class="slider2">
+            <div class="slider_photo">
+            </div>
+            <div class="clearfix"></div>
+            <div class="slider_info">
+                <p class="slider_header">
+                    The history and architecture of England
+                    <br />
+                    <span>25 Aug, 2016</span>
+                </p>
+                <p class="slider_text">
+                    Loren Ipsum is simply the dummy text of the printing and typesetting industry. Loren Ipsum has been the industry standard dummy text since the 1500s
+                    <br />
+                </p>
+                <p class="slider_footer">
+                    by Noelle Garza
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="col-xs-1">
+        <div class="arrow_right">
+            <img src="img/arrow-right.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                  <!-- ABOUT -->
+<div class="about">
+    <div class="wrapper">
+        <div class="about_text">
+            <div class="about_header">
+                About London
+                <p>
+                    London is the political, economic and cultural capital of Britain. You can visit the Queen's official residence at Buckingham Palace and tour the Houses of Parliament, historic home of the UK government.
+                    <br />
+                    <br /> London's world-class tourist attractions are renowned across the globe. Many of the most famous attractions are free to visit, for example Tate Modern, the National Gallery and the Victoria and Albert Museum.
+                </p>
+            </div>
+            <div class="history">
+                History
+                <p>
+                    London's history stretches back over thousands of year's and the city boasts four World Heritage Sites: the Palace of Westminster and Westminster Abbey, the Tower of London, Maritime Greenwich and the Royal Botanic Gardens, Kew.
+                </p>
+            </div>
+            <button class="about_bttn"><a>READ MORE</a></button>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="about_photo">
+            <img src="img/LondonPicture.png" />
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+<div class="trip">
+  <p class="trip_header">
+    Select your <span class="trip_crossout">favorite trip</span>
+  </p>
+  <div class="bckgrnd_text2" data="select trip">
+  </div>
+  <div style="clear:both;"></div>
+  <div class="scroll">
+    <div href="#" class="scroll1"></div>
+    <div href="#" class="scroll2"></div>
+    <div href="#" class="scroll3"></div>
+    <div href="#" class="scroll4"></div>
+    <div href="#" class="scroll5"></div>
+  </div>
+  <div style="clear:both;">
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-2">
+      <h2 class="article">articles</h2>
+      <ul class="art_list">
+        <li>
+          Exploring the food in the heart of London <br />
+          <span>by Felecia Wilson  |  25 Aug, 2016</span>
+        </li>
+        <li>
+          The history and architecture of England <br />
+          <span>by Felecia Wilson  |  25 Aug, 2016</span>
+        </li>
+        <li>
+          Exploring the food in the heart of london <br />
+          <span>by Felecia Wilson  |  25 Aug, 2016</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-2">
+      <h3 class="us">about us</h3>
+      <p class="footer_text">
+        London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Paraliament, the iconic 'Big Ben' clock tower and Westminster Abbey, site of the British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.
+      </p>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-2">
+      <h4 class="letter">newsletter</h4>
+      <p class="letter_text">
+        Get updates about new tours, travel tips, photo guides and more!
+      </p>
+      <div class="input_name">
+        <input type="text" id="name" class="input1" />
+        <label for="name" class="label1">Name</label>
+      </div>
+      <div class="input_email">
+        <input type="text" id="email" class="input2" />
+        <label for="email" class="label2">E-mail</label>
+      </div>
+      <button class="letter_button">SEND</button>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <div class="copy">
+    &copy Copyright 2016
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</body>
